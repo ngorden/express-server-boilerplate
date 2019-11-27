@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel build/ -d lib; node ./lib/build.js",
+    "dev": "nodemon --config nodemon.json",
+    "start": "node ./dist/start.js --env=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "Typescript"
+  ],
+  "author": "Nicholas Gorden",
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.0.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.11.1",
+    "@types/fs-extra": "^8.0.1",
+    "@types/http-errors": "^1.6.3",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^12.12.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.1",
+    "ts-config": "^20.10.0",
+    "ts-node": "^8.5.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.4.3"
+  }
+}
