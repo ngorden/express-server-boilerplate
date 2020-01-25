@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel build/ -d lib; node ./lib/build.js",
+    "build": "babel build build -d lib && node ./lib/build.js",
     "dev": "nodemon --config nodemon.json",
     "start": "node ./dist/start.js --env=production",
     "test": "echo \"Error: no test specified\" && exit 1"
